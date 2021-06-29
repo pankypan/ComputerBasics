@@ -1,0 +1,75 @@
+a1. is 和 == 的区别.
+	is是判断地址的,id()
+	== 判断值
+
+   
+2. 解释一下python中的小整数
+	[-5, 256]
+
+
+3. 谈一下对python捕获异常 的理解
+ try:
+ except :# 先写小范围的异常,再写大范围的异常.
+ except :
+ else:
+	# 没有异常发生的时候会执行
+ finally:
+ 
+ 写出python中的常见异常.
+ KeyError
+ TypeError
+ IOError
+ HTTPError
+ UrlError
+ ValueError
+ AttributeError
+ IndexError
+ ZeroDivisionError
+ ImportError
+
+      
+4, 尽可能多的写出,去除列表中的重复元素.
+list= [1,9,3,3,8]
+s = set(list)
+print(list(s))
+
+list2 = []
+for i in list:
+    if i not in list2:
+		list2.append(i)
+		
+
+[list2.append(i) for i in list if i not in list2]
+
+
+		
+	
+dic =  {}
+for i in list:
+	dic[i] = None
+print(list(dic.keys()))
+
+
+5, python的自省函数
+
+setattr  给属性赋值
+getattr  获取属性, 获取会报错.
+hasattr  判断是否具有某个属性
+
+   
+6, 请尽可能多的写出交换a,b变量的值方法.不使用第三个变量.
+	# 直接交换
+	a, b = b, a
+	
+	# 加减法
+	a = a + b
+	b = a - b
+	a = a - b
+	
+	# 位运算 异或
+	a = a ^ b
+	b = a ^ b  #  a ^b ^ b
+	a = a ^ b  # a^ b ^ a
+	
+
+

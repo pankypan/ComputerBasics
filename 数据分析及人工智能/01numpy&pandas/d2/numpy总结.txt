@@ -1,0 +1,75 @@
+vice presiden
+jupyter 的魔法命令
+
+
+%run  可以在notebook中执行外部python脚本.
+%time 计算一次的运行时间.
+%timeit 计算平均运行时间.
+%%timeit 计算多行命令的平均运行时间.
+%who    显示当前笔记的全局变量,函数等.
+%who_ls 列表显示
+%whos   详细信息.
+
+lsmagic 
+alias??
+
+
+routines方法
+np.ones 全是1
+np.zeros 全是0
+np.full  fill_value
+np.eye 对角线全是1, 其他位置全是0的矩阵, 单位矩阵.
+np.random.random() 0到1之间的随机数作为值的矩阵.
+np.random.randint(low, high) 左闭右开, 随机整数
+np.arange() 和range一样
+np.random.normal() 正态分布
+np.linspace() 把一个范围等分成num份
+np.random.randn(d0,d1,d2...dn)标准正态分布
+np.random.rand(d0, d1,  d2...dn) =np.random.random一样
+ 
+ndarray的属性
+ndim 维度
+shape 形状
+size 总长度
+dtype 数据类型
+
+reshape要求size不变.
+
+级联
+concatenate  axis=0  垂直方向, axis=1 水平方向
+np.hstack()  np.vstack()
+
+切分
+np.split
+np.vsplit() np.hsplit()
+
+赋值不会产生副本
+copy()深拷贝.
+
+
+聚合运算
+sum mean max  min  std var argmax argmin prod power median 
+np.sum()
+ndarray.sum()
+
+
+广播机制 :
+1, 缺维度 ,补维度.
+2, 缺数据,用已有的数据填充.
+
+矩阵的乘法 点乘
+np.dot(a,b)
+要求: a矩阵的列数,要和b矩阵的行数一致
+
+
+np.sort()  有返回
+ndarray.sort() 不会创建新的内存,直接修改原始数据
+
+
+部分排序
+np.patition(kth)
+
+
+
+
+
